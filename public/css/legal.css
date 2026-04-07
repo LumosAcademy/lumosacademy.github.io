@@ -1,0 +1,51 @@
+/* =============================================================
+   Lumos Academy — Legal Pages Stylesheet (privacy, terms)
+   lumosacademyus.org · Version 1.0 · April 2026
+   ============================================================= */
+
+/* Inherits CSS variables from main.css but is self-contained
+   so legal pages can be served standalone if needed.          */
+
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+:root {
+  --blue:         #2B388F;
+  --orange:       #F18A20;
+  --gray-100:     #F8F9FA;
+  --gray-200:     #E9ECEF;
+  --gray-600:     #6C757D;
+  --gray-900:     #212529;
+  --font-h:       'Poppins', sans-serif;
+  --font-b:       'Inter', sans-serif;
+}
+
+body { font-family: var(--font-b); color: var(--gray-900); line-height: 1.7; background: #fff; }
+h1, h2, h3 { font-family: var(--font-h); font-weight: 700; }
+a { color: var(--blue); text-decoration: none; }
+a:hover { text-decoration: underline; }
+
+/* ── Nav ──────────────────────────────────────────────────── */
+nav { background: #fff; border-bottom: 1px solid var(--gray-200); padding: 0 20px; }
+.nav-i { max-width: 860px; margin: 0 auto; display: flex; align-items: center; justify-content: space-between; height: 64px; }
+.logo      { font-family: var(--font-h); font-weight: 800; font-size: 1.2rem; color: var(--blue); display: flex; align-items: center; gap: 8px; }
+.logo span { color: var(--orange); }
+.logo-ic   { width: 30px; height: 30px; background: var(--blue); border-radius: 7px; display: flex; align-items: center; justify-content: center; color: #fff; font-size: .85rem; }
+.back-link { color: var(--blue); font-size: .9rem; font-weight: 500; }
+
+/* ── Hero bar ─────────────────────────────────────────────── */
+.hero-bar       { background: var(--blue); color: #fff; padding: 48px 20px 40px; }
+.hero-bar .wrap { max-width: 860px; margin: 0 auto; }
+.hero-bar h1    { font-size: 2rem; margin-bottom: 8px; }
+.hero-bar p     { color: rgba(255,255,255,.72); font-size: .92rem; }
+
+/* ── Content ─────────────────────────────────────────────── */
+.content     { max-width: 860px; margin: 0 auto; padding: 48px 20px 80px; }
+.content h2  { font-size: 1.18rem; color: var(--blue); margin: 32px 0 10px; }
+.content p   { color: var(--gray-600); margin-bottom: 14px; font-size: .95rem; }
+.content ul  { color: var(--gray-600); font-size: .95rem; padding-left: 20px; margin-bottom: 14px; }
+.content ul li { margin-bottom: 6px; }
+
+/* ── Footer ──────────────────────────────────────────────── */
+footer   { background: var(--gray-900); color: rgba(255,255,255,.5); text-align: center; padding: 24px 20px; font-size: .82rem; }
+footer a { color: rgba(255,255,255,.6); }
+footer a:hover { color: rgba(255,255,255,.85); text-decoration: none; }
