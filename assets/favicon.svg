@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" width="64" height="64">
+  <!-- Background circle -->
+  <circle cx="32" cy="32" r="32" fill="#2B388F"/>
+  <!-- Open book pages -->
+  <path d="M14 20 Q32 16 32 32 Q32 16 50 20 L50 46 Q32 42 32 46 Q32 42 14 46 Z" fill="#ffffff" opacity="0.95"/>
+  <!-- Book spine line -->
+  <line x1="32" y1="17" x2="32" y2="46" stroke="#18B2B4" stroke-width="2"/>
+  <!-- Star sparkle top -->
+  <polygon points="32,8 33.5,12.5 38,12.5 34.5,15.2 35.8,20 32,17.5 28.2,20 29.5,15.2 26,12.5 30.5,12.5" fill="#F18A20"/>
+  <!-- Small stars -->
+  <circle cx="20" cy="14" r="2" fill="#95D145"/>
+  <circle cx="44" cy="14" r="2" fill="#95D145"/>
+</svg>
