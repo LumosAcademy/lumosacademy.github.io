@@ -1,0 +1,398 @@
+{
+  "lang": "es",
+  "langLabel": "Español",
+
+  "meta": {
+    "title": "Lumos Academy — Construye. Crea. Pertenece.",
+    "description": "Lumos Academy ofrece enriquecimiento práctico de habilidades para la vida para niños de 5 a 14 años en Dublin, Pleasanton, Livermore y San Ramon. Programas extraescolares y campamentos de verano en arte, carpintería, programación, teatro y más.",
+    "keywords": "enriquecimiento infantil Tri-Valley, programas extraescolares Dublin CA, habilidades para la vida niños Bay Area, campamento de verano Pleasanton, clases para niños Livermore, STEAM San Ramon, Lumos Academy",
+    "ogTitle": "Lumos Academy — Construye. Crea. Pertenece.",
+    "ogDescription": "Enriquecimiento práctico de habilidades para la vida para niños de 5 a 14 años en Tri-Valley, Bay Area. Programas extraescolares y campamentos de verano en arte, carpintería, programación, teatro y más.",
+    "ogImageAlt": "Lumos Academy — programas de enriquecimiento para niños en Tri-Valley",
+    "twitterTitle": "Lumos Academy — Construye. Crea. Pertenece.",
+    "twitterDescription": "Enriquecimiento práctico de habilidades para la vida para niños de 5 a 14 años en Tri-Valley, Bay Area."
+  },
+
+  "announcement": {
+    "text": "🌟 Inscripciones para Otoño 2026 abiertas — ",
+    "linkText": "Reserva el lugar de tu hijo/a →",
+    "linkHref": "#enroll"
+  },
+
+  "nav": {
+    "logoAlt": "Lumos Academy",
+    "links": [
+      { "href": "#about",    "label": "Nosotros" },
+      { "href": "#courses",  "label": "Cursos" },
+      { "href": "#programs", "label": "Programas" },
+      { "href": "#team",     "label": "Equipo" },
+      { "href": "#faq",      "label": "Preguntas" },
+      { "href": "#contact",  "label": "Contacto" }
+    ],
+    "ctaWaitlist": "Lista de espera",
+    "ctaEnroll": "Inscríbete",
+    "mobileCtaLabel": "Inscríbete para Otoño 2026"
+  },
+
+  "hero": {
+    "badge": "✦ Inscribiendo ahora · Otoño 2026 · Tri-Valley",
+    "titleLine1": "Construye. Crea.",
+    "titleLine2": "Pertenece.",
+    "description": "Lumos Academy es un programa práctico de enriquecimiento de habilidades para la vida para niños de 5 a 14 años en Dublin, Pleasanton, Livermore y San Ramon. Cada clase es en equipo, basada en proyectos y genuinamente divertida.",
+    "primaryCta":   { "label": "Inscríbete para Otoño 2026", "href": "#enroll" },
+    "secondaryCta": { "label": "Lista de espera verano",     "href": "#enroll" },
+    "stats": [
+      { "num": "12+",  "label": "Cursos de habilidades" },
+      { "num": "4",    "label": "Instructores expertos" },
+      { "num": "5–14", "label": "Edades que servimos" },
+      { "num": "≤14",  "label": "Niños por clase" }
+    ],
+    "tiles": [
+      { "icon": "🪵", "caption": "Niños construyendo en carpintería" },
+      { "icon": "🎨", "caption": "Arte e ilustración" },
+      { "icon": "💻", "caption": "Programando juntos" }
+    ]
+  },
+
+  "differentiators": {
+    "badge": "Por qué Lumos Academy",
+    "title": "Aprendizaje que de verdad perdura",
+    "description": "En un mundo de hojas de trabajo y pantallas, lo hacemos de otra manera. En LAC, los niños crean, se mueven y colaboran todos los días.",
+    "items": [
+      {
+        "icon": "🛠️",
+        "title": "Práctico, no frente a pantallas",
+        "description": "Cada clase implica construir, crear, actuar o trabajar a mano. Los niños usan herramientas reales, materiales reales y retos reales — no hojas ni videos pasivos."
+      },
+      {
+        "icon": "👥",
+        "title": "Siempre en equipo",
+        "description": "A diferencia de la mayoría, cada clase de LAC es en equipo. Los estudiantes aprenden a liderar, aportar y apoyarse entre sí — habilidades que importan más allá de la escuela."
+      },
+      {
+        "icon": "🌱",
+        "title": "Habilidades que perduran",
+        "description": "Costura, carpintería, programación, oratoria, danza, teatro — enseñamos habilidades que construyen confianza, creatividad y capacidad para toda la vida."
+      }
+    ]
+  },
+
+  "courses": {
+    "badge": "Nuestro Currículo",
+    "title": "Más de 12 cursos prácticos de habilidades para la vida",
+    "description": "Desde herramientas eléctricas hasta oratoria — nuestro currículo ayuda a los niños a descubrir lo que aman y a dominarlo.",
+    "items": [
+      { "color": "blue",   "icon": "🎨", "title": "Arte e Ilustración",                  "description": "Dibujo, pintura y técnicas mixtas que convierten ideas en historias visuales. Los equipos crean murales y piezas de galería colaborativas.", "tag": "Artes Creativas" },
+      { "color": "orange", "icon": "🪵", "title": "Carpintería",                         "description": "Herramientas reales, madera real, proyectos reales. Los niños aprenden medición, seguridad y artesanía construyendo casitas, estantes y más.", "tag": "Creación y Artesanía" },
+      { "color": "teal",   "icon": "🧵", "title": "Costura y Textil",                    "description": "Desde el cosido a mano hasta la máquina, los estudiantes diseñan y crean su propia ropa, accesorios y esculturas blandas.",                  "tag": "Creación y Artesanía" },
+      { "color": "green",  "icon": "💻", "title": "Programación y Pensamiento Computacional", "description": "Programación por bloques y texto a través de juegos y apps reales. Los equipos construyen proyectos y aprenden a depurar juntos.",       "tag": "Tecnología" },
+      { "color": "purple", "icon": "🎤", "title": "Oratoria y Narración",                "description": "Los niños aprenden a estructurar ideas, dominar una sala y hablar con confianza mediante debates y charlas tipo TED.",                  "tag": "Comunicación" },
+      { "color": "pink",   "icon": "🎭", "title": "Teatro y Drama",                      "description": "Desarrollo de personajes, guion y presentaciones en equipo. Construye empatía, presencia y valentía creativa.",                          "tag": "Artes Escénicas" },
+      { "color": "orange", "icon": "💃", "title": "Danza y Movimiento",                  "description": "Coreografía, ritmo y conciencia corporal. Los equipos crean y presentan rutinas originales en varios estilos.",                       "tag": "Artes Escénicas" },
+      { "color": "teal",   "icon": "🧩", "title": "Pensamiento Crítico",                 "description": "Acertijos lógicos, retos de diseño y debates. Construye habilidades de razonamiento que los niños usan en todo.",                      "tag": "Habilidades de Pensamiento" },
+      { "color": "green",  "icon": "🎲", "title": "Juego Estructurado y Diseño de Juegos", "description": "Los equipos inventan, prueban y refinan sus propios juegos de mesa y desafíos al aire libre. El juego es el currículo.",                 "tag": "Habilidades de Pensamiento" }
+    ]
+  },
+
+  "pricing": {
+    "badge": "Programas y Precios",
+    "title": "Elige el plan que se adapta a tu familia",
+    "description": "Opciones flexibles para cada horario — desde enriquecimiento diario completo hasta una sola clase mensual.",
+    "plans": [
+      {
+        "title": "Clase Individual",
+        "price": "$75",
+        "per": "al mes · 1 clase/semana",
+        "description": "Prueba una habilidad específica — ideal para explorar lo que le encanta a tu hijo/a antes de comprometerte a más.",
+        "features": [
+          "1 clase por semana (4×/mes)",
+          "~4 horas de aprendizaje/mes",
+          "Experiencia completa en equipo",
+          "Elige cualquier curso disponible",
+          "Flexibilidad mes a mes"
+        ],
+        "ctaLabel": "Comenzar",
+        "ctaHref": "#enroll",
+        "featured": false
+      },
+      {
+        "title": "Programa Mes Completo",
+        "price": "$650",
+        "per": "al mes · días entre semana, extraescolar",
+        "description": "La experiencia LAC completa — 5 horas al día, 5 días por semana, en todos los cursos de habilidades para la vida.",
+        "features": [
+          "80 hrs/mes de enriquecimiento",
+          "Lun–Vie extraescolar (5 hrs/día)",
+          "Los 12+ cursos incluidos",
+          "Temas semanales rotativos",
+          "Descuento por hermanos disponible"
+        ],
+        "ctaLabel": "Inscríbete Ya",
+        "ctaHref": "#enroll",
+        "featured": true,
+        "featuredBadge": "Más popular"
+      },
+      {
+        "title": "Intensivo de Verano",
+        "price": "$550",
+        "per": "por semana · campamento temático de día completo",
+        "description": "Campamentos inmersivos de una semana con un tema nuevo cada semana — construyendo, actuando y creando todo el día.",
+        "features": [
+          "Programa de día completo (Lun–Vie)",
+          "Nuevo tema cada semana",
+          "Proyectos de equipo y muestras",
+          "Varias semanas disponibles",
+          "Plazas limitadas — inscríbete pronto"
+        ],
+        "ctaLabel": "Lista de Espera",
+        "ctaHref": "#enroll",
+        "featured": false
+      }
+    ],
+    "noteText": "Ayuda financiera y descuentos por hermanos disponibles. ",
+    "noteLink": { "label": "Contáctanos para más información.", "href": "#contact" }
+  },
+
+  "howItWorks": {
+    "badge": "Cómo Funciona",
+    "title": "Comenzar es sencillo",
+    "description": "Desde la inscripción hasta la primera clase — facilitamos el proceso para familias ocupadas de Tri-Valley.",
+    "steps": [
+      { "n": "1", "title": "Elige tu Plan",       "description": "Elige el programa que se ajuste al horario de tu familia — mes completo, clase individual o campamento de verano." },
+      { "n": "2", "title": "Selecciona Cursos",   "description": "Explora más de 12 cursos y elige los que más entusiasman a tu hijo/a." },
+      { "n": "3", "title": "Conoce a tu Equipo",  "description": "El primer día, tu hijo/a se une a un pequeño equipo y a un instructor experto." },
+      { "n": "4", "title": "Míralos Florecer",    "description": "Observa a tu hijo/a desarrollar habilidades reales, amistades duraderas y la confianza de lograr cosas difíciles en equipo." }
+    ]
+  },
+
+  "team": {
+    "badge": "Nuestros Instructores",
+    "title": "Educadores apasionados. Verdaderos creadores.",
+    "description": "Nuestros instructores no son solo maestros — son artistas, ingenieros, artistas escénicos y artesanos que aportan experiencia auténtica a cada clase.",
+    "members": [
+      { "photo": "🎨", "name": "Biografía próximamente", "role": "Arte y Drama",                      "bio": "Estamos formando un equipo increíble para el lanzamiento de Otoño 2026." },
+      { "photo": "🪵", "name": "Biografía próximamente", "role": "Creación y Artesanía",              "bio": "Estamos formando un equipo increíble para el lanzamiento de Otoño 2026." },
+      { "photo": "💻", "name": "Biografía próximamente", "role": "Tecnología",                        "bio": "Estamos formando un equipo increíble para el lanzamiento de Otoño 2026." },
+      { "photo": "🎤", "name": "Biografía próximamente", "role": "Comunicación y Artes Escénicas",    "bio": "Estamos formando un equipo increíble para el lanzamiento de Otoño 2026." }
+    ],
+    "footerText": "¿Te interesa enseñar en LAC? ",
+    "footerLink": { "label": "Nos encantaría saber de ti.", "href": "#contact" }
+  },
+
+  "faq": {
+    "badge": "Preguntas Frecuentes",
+    "title": "Preguntas que los padres nos hacen más",
+    "description": "Sabemos que tienes preguntas antes de confiarnos a tu hijo/a. Aquí las que escuchamos con más frecuencia.",
+    "items": [
+      { "q": "¿Qué edades sirve Lumos Academy?",                                   "a": "Lumos Academy atiende a niños de 5 a 14 años, desde kindergarten hasta secundaria. El currículo está organizado por edad para que el contenido y la dinámica sean apropiados al desarrollo de cada niño." },
+      { "q": "¿Qué significa aprendizaje \"en equipo\" en realidad?",              "a": "Cada proyecto en LAC se completa como un equipo de 4–6 niños. En lugar de trabajar solos, dividen responsabilidades, resuelven problemas juntos y comparten su trabajo en grupo. Esto refleja cómo trabajan los adultos — y hace el aprendizaje mucho más atractivo y memorable." },
+      { "q": "¿Cuál es la proporción estudiante-maestro?",                         "a": "Mantenemos un máximo de 14 estudiantes por instructor. Esto asegura atención personal y que los equipos sean lo suficientemente pequeños para ser genuinamente colaborativos." },
+      { "q": "¿Dónde está Lumos Academy?",                                         "a": "Lumos Academy sirve al área de Tri-Valley, con familias de Dublin, Pleasanton, Livermore y San Ramon. La dirección exacta se anunciará antes del lanzamiento de Otoño 2026. Únete a la lista de espera para enterarte primero." },
+      { "q": "¿Qué pasa si mi hijo/a falta a una clase?",                          "a": "Entendemos que los niños se enferman y la vida pasa. Ofrecemos una sesión de recuperación al mes para los miembros del Programa Mes Completo. Por favor contáctanos con al menos 24 horas de anticipación cuando sea posible." },
+      { "q": "¿Ofrecen descuentos por hermanos o ayuda financiera?",               "a": "Sí — ofrecemos un descuento por hermanos para familias que inscriben a más de un niño, y tenemos un número limitado de plazas con ayuda financiera por necesidad en cada sesión. Contáctanos directamente para ver qué está disponible." },
+      { "q": "¿Puedo cancelar o cambiar mi plan?",                                 "a": "Sí. La Clase Individual se puede pausar o cancelar con 5 días de aviso antes del próximo ciclo de facturación. El Programa Mes Completo requiere 10 días de aviso antes del próximo mes." },
+      { "q": "¿Cuándo comienza el programa de Otoño 2026?",                        "a": "Nuestro objetivo es septiembre de 2026, siguiendo los calendarios de los distritos escolares locales. Los campamentos intensivos de verano están planeados para julio de 2026. Las fechas exactas se enviarán por correo a todos los de la lista de espera primero." }
+    ]
+  },
+
+  "enrollCta": {
+    "title": "Las inscripciones para Otoño 2026 están abiertas.",
+    "description": "Las plazas están limitadas a 14 estudiantes por clase. Reserva el lugar de tu hijo/a en Lumos Academy hoy.",
+    "primaryCta":   { "label": "Inscríbete para Otoño 2026", "href": "#enroll" },
+    "secondaryCta": { "label": "Lista de espera verano",     "href": "#enroll" }
+  },
+
+  "enroll": {
+    "badge": "Comienza",
+    "title": "Reserva el lugar de tu hijo/a",
+    "description": "Completa el formulario a continuación y nos comunicaremos en 1–2 días hábiles para confirmar los detalles de inscripción.",
+
+    "enrollForm": {
+      "title": "🍂 Inscríbete para Otoño 2026",
+      "subtitle": "Programa Mes Completo o Clase Individual · Comienza septiembre 2026",
+      "labels": {
+        "parentName": "Nombre del padre/madre o tutor *",
+        "email": "Correo electrónico *",
+        "phone": "Teléfono",
+        "city": "Ciudad *",
+        "childAge": "Edad del niño/a *",
+        "program": "Programa de interés *",
+        "courses": "Cursos que más emocionan a tu hijo/a",
+        "notes": "¿Algo más que debamos saber?"
+      },
+      "placeholders": {
+        "parentName": "Juana Pérez",
+        "email": "juana@email.com",
+        "phone": "(925) 555-0100",
+        "courses": "ej. Carpintería, Programación, Teatro",
+        "notes": "Hermanos inscribiéndose, preguntas, necesidades especiales, etc."
+      },
+      "selects": {
+        "cityPrompt": "Selecciona ciudad",
+        "cities": ["Dublin", "Pleasanton", "Livermore", "San Ramon", "Otra cercana"],
+        "agePrompt": "Selecciona edad",
+        "programPrompt": "Selecciona programa",
+        "programs": [
+          "Programa Mes Completo ($650/mes)",
+          "Clase Individual ($75/mes)",
+          "Ambos — cuéntame más"
+        ]
+      },
+      "submit": "Reservar Nuestro Lugar →",
+      "success": {
+        "icon": "🎉",
+        "title": "¡Estás en la lista!",
+        "message": "Nos comunicaremos en 1–2 días hábiles para confirmar los detalles de inscripción."
+      }
+    },
+
+    "waitlistForm": {
+      "title": "☀️ Únete a la Lista de Espera de Verano",
+      "subtitle": "Campamentos Intensivos · $550/semana · Comienza julio 2026",
+      "labels": {
+        "parentName": "Nombre del padre/madre o tutor *",
+        "email": "Correo electrónico *",
+        "phone": "Teléfono",
+        "childAge": "Edad del niño/a *",
+        "weeks": "Semanas de interés",
+        "source": "¿Cómo supiste de nosotros?",
+        "comments": "Preguntas o comentarios"
+      },
+      "placeholders": {
+        "parentName": "Juana Pérez",
+        "email": "juana@email.com",
+        "phone": "(925) 555-0100",
+        "comments": "¿Qué emociona más a tu hijo/a? ¿Alguna pregunta sobre el campamento de verano?"
+      },
+      "selects": {
+        "agePrompt": "Selecciona edad",
+        "weeksPrompt": "Aún no estoy seguro/a",
+        "weeksOptions": ["1 semana", "2 semanas", "3+ semanas"],
+        "sourcePrompt": "Selecciona una",
+        "sources": [
+          "Amigo / vecino",
+          "Boletín de la escuela",
+          "Instagram / redes sociales",
+          "Búsqueda en Google",
+          "NextDoor",
+          "Otro"
+        ]
+      },
+      "submit": "Unirme a la Lista →",
+      "success": {
+        "icon": "☀️",
+        "title": "¡Estás en la lista de espera de verano!",
+        "message": "Te enviaremos acceso prioritario a la inscripción del campamento en cuanto confirmemos las fechas."
+      },
+      "aidNote": {
+        "prefix": "💙 ",
+        "bold": "Ayuda financiera disponible.",
+        "text": " Creemos que todo niño/a merece un gran enriquecimiento. ",
+        "link": { "label": "Contáctanos", "href": "#contact" },
+        "suffix": " para conocer nuestro programa de ayuda según necesidad."
+      }
+    }
+  },
+
+  "contact": {
+    "badge": "Contáctanos",
+    "title": "Nos encantaría saber de ti",
+    "description": "¿Tienes preguntas antes de inscribirte? Con gusto conversamos, damos un recorrido o respondemos lo que tengas en mente.",
+
+    "info": {
+      "title": "Contacta a Lumos Academy",
+      "intro": "Servimos familias en Dublin, Pleasanton, Livermore y San Ramon. Nuestra ubicación exacta se anunciará antes del lanzamiento de Otoño 2026 — únete a la lista de espera para enterarte primero.",
+      "items": [
+        { "icon": "📍", "title": "Ubicación",                "linesHtml": "Tri-Valley, East Bay · Dublin · Pleasanton · Livermore · San Ramon<br><em>Dirección exacta pronto</em>" },
+        { "icon": "📧", "title": "Correo electrónico",       "linesHtml": "hello@lumosacademyus.org" },
+        { "icon": "🕐", "title": "Horario extraescolar",     "linesHtml": "Lunes – Viernes · Horas extraescolares<br>Campamentos de verano: Día completo Lun–Vie" },
+        { "icon": "📱", "title": "Síguenos",                 "linesHtml": "@lumosacademyus en Instagram<br><em>(pronto — ¡síguenos para novedades!)</em>" }
+      ]
+    },
+
+    "form": {
+      "title": "Envíanos un mensaje",
+      "subtitle": "Respondemos en 1–2 días hábiles.",
+      "labels": {
+        "name": "Tu nombre *",
+        "email": "Correo electrónico *",
+        "subject": "Asunto",
+        "message": "Mensaje *"
+      },
+      "placeholders": {
+        "name": "Juana Pérez",
+        "email": "juana@email.com",
+        "message": "Cuéntanos lo que tienes en mente..."
+      },
+      "subjects": [
+        "Pregunta general",
+        "Pregunta de inscripción",
+        "Precios y ayuda financiera",
+        "Alianza / consulta de instructor",
+        "Otro"
+      ],
+      "submit": "Enviar mensaje",
+      "success": {
+        "icon": "✉️",
+        "title": "¡Mensaje enviado!",
+        "message": "Gracias por escribirnos. Te responderemos en 1–2 días hábiles."
+      }
+    }
+  },
+
+  "footer": {
+    "logoAlt": "Lumos Academy",
+    "tagline": "Enriquecimiento práctico de habilidades para la vida para niños de 5 a 14 años. Servimos Dublin, Pleasanton, Livermore y San Ramon en Tri-Valley, Bay Area.",
+    "instagramUrl": "https://instagram.com/lumosacademyus",
+    "columns": [
+      {
+        "title": "Programas",
+        "links": [
+          { "label": "Programa Mes Completo", "href": "#programs" },
+          { "label": "Clase Individual",      "href": "#programs" },
+          { "label": "Intensivo de Verano",   "href": "#programs" },
+          { "label": "Inscríbete",            "href": "#enroll" }
+        ]
+      },
+      {
+        "title": "Cursos",
+        "links": [
+          { "label": "Arte e Ilustración", "href": "#courses" },
+          { "label": "Carpintería",        "href": "#courses" },
+          { "label": "Programación",       "href": "#courses" },
+          { "label": "Oratoria",           "href": "#courses" },
+          { "label": "Teatro y Danza",     "href": "#courses" }
+        ]
+      },
+      {
+        "title": "Información",
+        "links": [
+          { "label": "Acerca de LAC",        "href": "#about" },
+          { "label": "Nuestro Equipo",       "href": "#team" },
+          { "label": "Preguntas Frecuentes", "href": "#faq" },
+          { "label": "Contacto",             "href": "#contact" },
+          { "label": "Política de Privacidad", "href": "privacy.html" },
+          { "label": "Términos de Servicio", "href": "terms.html" }
+        ]
+      }
+    ],
+    "copyright": "© 2026 Lumos Academy · lumosacademyus.org · Tri-Valley, Bay Area, CA",
+    "legalLinks": [
+      { "label": "Política de Privacidad", "href": "privacy.html" },
+      { "label": "Términos de Servicio",   "href": "terms.html" }
+    ]
+  },
+
+  "language": {
+    "switcherLabel": "Idioma",
+    "options": [
+      { "code": "en", "label": "English" },
+      { "code": "es", "label": "Español" }
+    ]
+  },
+
+  "errors": {
+    "formError": "Algo salió mal — por favor escríbenos a hello@lumosacademyus.org",
+    "submitting": "Enviando…"
+  }
+}

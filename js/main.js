@@ -1,76 +1,125 @@
 /* =============================================================
    Lumos Academy — Main JavaScript
-   lumosacademyus.org · Version 1.0 · April 2026
+   lumosacademyus.org · April 2026
+
+   Loads localized content from /content/<lang>.json and delegates
+   rendering to js/render.js. Event handlers (mobile menu, FAQ,
+   form submission) remain here and are attached globally so the
+   renderer can reference them by name.
    ============================================================= */
 
-/* ── CONFIG ──────────────────────────────────────────────────
-   Replace YOUR_DEPLOYMENT_ID after deploying the Apps Script.
-   Instructions: see /scripts/google-apps-script.gs
-   ------------------------------------------------------------ */
+/* ── CONFIG ────────────────────────────────────────────── */
 const APPS_SCRIPT_URL =
   "https://script.google.com/macros/s/AKfycbz3LbwI8ws_lBLehumLx2dw0wfeHBNiUGXbU6ad58SP96E_1-pQ0mSCNyyA0cZGn5ODlw/exec";
 
-/* ── MOBILE NAVIGATION ───────────────────────────────────── */
+const SUPPORTED_LANGS = ['en', 'es'];
+const DEFAULT_LANG    = 'en';
+const LANG_STORAGE_KEY = 'lac.lang';
+
+// Cached current content — populated after render so form
+// handlers can surface localized error messages.
+let CURRENT_CONTENT = null;
+
+/* ── LANGUAGE ──────────────────────────────────────────── */
+
+function resolveLang() {
+  const params = new URLSearchParams(window.location.search);
+  const fromUrl = params.get('lang');
+  if (fromUrl && SUPPORTED_LANGS.indexOf(fromUrl) !== -1) return fromUrl;
+
+  const stored = localStorage.getItem(LANG_STORAGE_KEY);
+  if (stored && SUPPORTED_LANGS.indexOf(stored) !== -1) return stored;
+
+  const browser = (navigator.language || '').slice(0, 2).toLowerCase();
+  if (SUPPORTED_LANGS.indexOf(browser) !== -1) return browser;
+
+  return DEFAULT_LANG;
+}
+
+function setLanguage(code) {
+  if (SUPPORTED_LANGS.indexOf(code) === -1) return;
+  localStorage.setItem(LANG_STORAGE_KEY, code);
+
+  const url = new URL(window.location.href);
+  url.searchParams.set('lang', code);
+  window.history.replaceState({}, '', url);
+
+  loadAndRender(code);
+}
+
+async function loadAndRender(lang) {
+  try {
+    const res = await fetch('content/' + lang + '.json', { cache: 'no-cache' });
+    if (!res.ok) throw new Error('HTTP ' + res.status);
+    const content = await res.json();
+    CURRENT_CONTENT = content;
+    window.LAC.render(content);
+  } catch (err) {
+    console.error('[LAC] Failed to load content for', lang, err);
+    if (lang !== DEFAULT_LANG) loadAndRender(DEFAULT_LANG);
+  }
+}
+
+/* ── MOBILE NAVIGATION ─────────────────────────────────── */
 function toggleMenu() {
-  document.getElementById('mobMenu').classList.toggle('open');
+  const m = document.getElementById('mobMenu');
+  if (m) m.classList.toggle('open');
 }
 
 function closeMenu() {
-  document.getElementById('mobMenu').classList.remove('open');
+  const m = document.getElementById('mobMenu');
+  if (m) m.classList.remove('open');
 }
 
-// Close mobile menu when clicking outside of it
 document.addEventListener('click', function (e) {
   const menu = document.getElementById('mobMenu');
   const ham = document.getElementById('ham');
   if (menu && menu.classList.contains('open') &&
-    !menu.contains(e.target) && !ham.contains(e.target)) {
+    !menu.contains(e.target) && ham && !ham.contains(e.target)) {
     menu.classList.remove('open');
   }
 });
 
-/* ── SMOOTH SCROLL (offset for sticky nav) ───────────────── */
-document.querySelectorAll('a[href^="#"]').forEach(function (anchor) {
-  anchor.addEventListener('click', function (e) {
-    const target = document.querySelector(this.getAttribute('href'));
-    if (target) {
-      e.preventDefault();
-      window.scrollTo({ top: target.offsetTop - 70, behavior: 'smooth' });
-    }
-  });
+/* ── SMOOTH SCROLL — delegated because links are rendered late ── */
+document.addEventListener('click', function (e) {
+  const anchor = e.target.closest('a[href^="#"]');
+  if (!anchor) return;
+  const href = anchor.getAttribute('href');
+  if (href === '#' || href.length < 2) return;
+  const target = document.querySelector(href);
+  if (!target) return;
+  e.preventDefault();
+  window.scrollTo({ top: target.offsetTop - 70, behavior: 'smooth' });
 });
 
-/* ── FAQ ACCORDION ───────────────────────────────────────── */
+/* ── FAQ ACCORDION ─────────────────────────────────────── */
 function toggleFaq(el) {
   const answer = el.nextElementSibling;
   const wasOpen = el.classList.contains('open');
 
-  // Collapse all
   document.querySelectorAll('.faq-q').forEach(function (q) { q.classList.remove('open'); });
   document.querySelectorAll('.faq-a').forEach(function (a) { a.classList.remove('open'); });
 
-  // Expand the clicked item (unless it was already open)
   if (!wasOpen) {
     el.classList.add('open');
     answer.classList.add('open');
   }
 }
 
-/* ── FORM UTILITIES ─────────────────────────────────────── */
+/* ── FORM UTILITIES ────────────────────────────────────── */
 
-/** Show/hide button loading state */
 function setSubmitting(btn, isSubmitting) {
   btn.disabled = isSubmitting;
-  btn.textContent = isSubmitting ? 'Sending…' : btn.dataset.original;
+  const submittingLabel =
+    (CURRENT_CONTENT && CURRENT_CONTENT.errors && CURRENT_CONTENT.errors.submitting) || 'Sending…';
+  btn.textContent = isSubmitting ? submittingLabel : btn.dataset.original;
 }
 
-/** Replace the form with a success message */
 function showSuccess(formId, successId) {
   document.getElementById(formId).style.display = 'none';
   document.getElementById(successId).style.display = 'block';
 }
 
-/** Show an inline error below the submit button */
 function showError(btn, message) {
   btn.disabled = false;
   btn.textContent = btn.dataset.original;
@@ -87,15 +136,8 @@ function showError(btn, message) {
   errEl.textContent = message;
 }
 
-/**
- * POST a JSON payload to the Apps Script web app.
- * Google Apps Script requires mode:'no-cors', which returns an opaque
- * response — any completion without a network error is treated as success.
- */
 async function postToSheets(payload, btn, formId, successId) {
-  // Cache the original button label before first submission
   if (!btn.dataset.original) btn.dataset.original = btn.textContent;
-
   setSubmitting(btn, true);
 
   try {
@@ -108,16 +150,14 @@ async function postToSheets(payload, btn, formId, successId) {
     showSuccess(formId, successId);
   } catch (err) {
     console.error('[LAC] Form submission error:', err);
-    showError(
-      btn,
-      'Something went wrong — please email us at hello@lumosacademyus.org'
-    );
+    const fallback = 'Something went wrong — please email us at hello@lumosacademyus.org';
+    const msg = (CURRENT_CONTENT && CURRENT_CONTENT.errors && CURRENT_CONTENT.errors.formError) || fallback;
+    showError(btn, msg);
   }
 }
 
-/* ── FORM HANDLERS ──────────────────────────────────────── */
+/* ── FORM HANDLERS ─────────────────────────────────────── */
 
-/** Fall 2026 Enrollment form */
 function submitEnrollment(e) {
   e.preventDefault();
   const f = e.target;
@@ -138,7 +178,6 @@ function submitEnrollment(e) {
   postToSheets(payload, btn, 'enrollForm', 'enrollSuccess');
 }
 
-/** Summer 2026 Waitlist form */
 function submitWaitlist(e) {
   e.preventDefault();
   const f = e.target;
@@ -158,7 +197,6 @@ function submitWaitlist(e) {
   postToSheets(payload, btn, 'waitlistForm', 'waitlistSuccess');
 }
 
-/** Contact form */
 function submitContact(e) {
   e.preventDefault();
   const f = e.target;
@@ -175,3 +213,17 @@ function submitContact(e) {
 
   postToSheets(payload, btn, 'contactForm', 'contactSuccess');
 }
+
+/* ── Expose handlers referenced by rendered markup ───── */
+window.toggleMenu       = toggleMenu;
+window.closeMenu        = closeMenu;
+window.toggleFaq        = toggleFaq;
+window.submitEnrollment = submitEnrollment;
+window.submitWaitlist   = submitWaitlist;
+window.submitContact    = submitContact;
+window.setLanguage      = setLanguage;
+
+/* ── BOOTSTRAP ─────────────────────────────────────────── */
+document.addEventListener('DOMContentLoaded', function () {
+  loadAndRender(resolveLang());
+});

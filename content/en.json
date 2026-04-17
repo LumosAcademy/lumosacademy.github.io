@@ -1,0 +1,635 @@
+{
+  "lang": "en",
+  "langLabel": "English",
+  "meta": {
+    "title": "Lumos Academy — Build. Create. Belong.",
+    "description": "Lumos Academy offers hands-on life skills enrichment for kids ages 5–14 in Dublin, Pleasanton, Livermore, and San Ramon. Afterschool programs and summer camps in art, woodworking, coding, drama, and more.",
+    "keywords": "kids enrichment Tri-Valley, afterschool programs Dublin CA, life skills kids Bay Area, summer camp Pleasanton, kids classes Livermore, STEAM enrichment San Ramon, Lumos Academy",
+    "ogTitle": "Lumos Academy — Build. Create. Belong.",
+    "ogDescription": "Hands-on life skills enrichment for kids ages 5–14 in the Tri-Valley, Bay Area. Afterschool programs and summer camps in art, woodworking, coding, drama, and more.",
+    "ogImageAlt": "Lumos Academy — kids enrichment programs in the Tri-Valley",
+    "twitterTitle": "Lumos Academy — Build. Create. Belong.",
+    "twitterDescription": "Hands-on life skills enrichment for kids ages 5–14 in the Tri-Valley, Bay Area."
+  },
+  "announcement": {
+    "text": "🌟 Fall 2026 Enrollment is Now Open — ",
+    "linkText": "Reserve your child's spot →",
+    "linkHref": "#enroll"
+  },
+  "nav": {
+    "logoAlt": "Lumos Academy",
+    "links": [
+      {
+        "href": "#about",
+        "label": "About"
+      },
+      {
+        "href": "#courses",
+        "label": "Courses"
+      },
+      {
+        "href": "#programs",
+        "label": "Programs"
+      },
+      {
+        "href": "#team",
+        "label": "Team"
+      },
+      {
+        "href": "#faq",
+        "label": "FAQ"
+      },
+      {
+        "href": "#contact",
+        "label": "Contact"
+      }
+    ],
+    "ctaWaitlist": "Join Waitlist",
+    "ctaEnroll": "Enroll Now",
+    "mobileCtaLabel": "Enroll for Fall 2026"
+  },
+  "hero": {
+    "badge": "✦ Now enrolling · Fall 2026 · Tri-Valley",
+    "titleLine1": "Build. Create.",
+    "titleLine2": "Belong.",
+    "description": "Lumos Academy is a hands-on life skills enrichment program for kids ages 5–14 in Dublin, Pleasanton, Livermore & San Ramon. Every class is team-based, project-driven, and genuinely fun.",
+    "primaryCta": {
+      "label": "Enroll for Fall 2026",
+      "href": "#enroll"
+    },
+    "secondaryCta": {
+      "label": "Join Summer Waitlist",
+      "href": "#enroll"
+    },
+    "stats": [
+      {
+        "num": "12+",
+        "label": "Life skill courses"
+      },
+      {
+        "num": "4",
+        "label": "Expert instructors"
+      },
+      {
+        "num": "5–14",
+        "label": "Ages served"
+      },
+      {
+        "num": "≤14",
+        "label": "Kids per class"
+      }
+    ],
+    "tiles": [
+      {
+        "icon": "🪵",
+        "caption": "Kids building in woodworking class"
+      },
+      {
+        "icon": "🎨",
+        "caption": "Art & illustration"
+      },
+      {
+        "icon": "💻",
+        "caption": "Coding together"
+      }
+    ]
+  },
+  "differentiators": {
+    "badge": "Why Lumos Academy",
+    "title": "Learning that actually sticks",
+    "description": "In a world of worksheets and screens, we do things differently. At Lumos Academy, kids make, move, and collaborate every single day.",
+    "items": [
+      {
+        "icon": "🛠️",
+        "title": "Hands-On, Not Screen-On",
+        "description": "Every class involves building, making, performing, or crafting. Kids work with real tools, real materials, and real challenges — not passive worksheets or videos."
+      },
+      {
+        "icon": "👥",
+        "title": "Always in Teams",
+        "description": "Unlike most enrichment programs, every Lumos Academy class is team-based. Students learn to lead, contribute, and support each other — skills that matter far beyond school."
+      },
+      {
+        "icon": "🌱",
+        "title": "Life Skills That Last",
+        "description": "Sewing, woodworking, coding, speaking, dance, drama — we teach skills that build confidence, creativity, and capability for life, not just the next test."
+      }
+    ]
+  },
+  "courses": {
+    "badge": "Our Curriculum",
+    "title": "12+ hands-on life skill courses",
+    "description": "From power tools to public speaking — our curriculum helps kids discover what they love and get really good at it.",
+    "items": [
+      {
+        "color": "blue",
+        "icon": "🎨",
+        "title": "Art & Illustration",
+        "description": "Sketching, painting, and mixed media projects that turn ideas into visual stories. Teams create collaborative murals and gallery pieces.",
+        "tag": "Creative Arts"
+      },
+      {
+        "color": "orange",
+        "icon": "🪵",
+        "title": "Woodworking",
+        "description": "Real tools, real wood, real projects. Kids learn measurement, safety, and craftsmanship while building birdhouses, shelves, and more.",
+        "tag": "Making & Craft"
+      },
+      {
+        "color": "teal",
+        "icon": "🧵",
+        "title": "Sewing & Textile",
+        "description": "From hand-stitching to machine sewing, students design and create their own clothing, accessories, and soft sculptures.",
+        "tag": "Making & Craft"
+      },
+      {
+        "color": "green",
+        "icon": "💻",
+        "title": "Coding & Computational Thinking",
+        "description": "Block-based and text coding through real games and apps. Teams build working projects and learn to debug together.",
+        "tag": "Technology"
+      },
+      {
+        "color": "purple",
+        "icon": "🎤",
+        "title": "Public Speaking & Storytelling",
+        "description": "Kids learn to structure ideas, own a room, and speak with confidence through team debates and TED-style talks.",
+        "tag": "Communication"
+      },
+      {
+        "color": "pink",
+        "icon": "🎭",
+        "title": "Drama & Theater",
+        "description": "Character development, script writing, and full team performances. Builds empathy, presence, and creative courage.",
+        "tag": "Performing Arts"
+      },
+      {
+        "color": "orange",
+        "icon": "💃",
+        "title": "Dance & Movement",
+        "description": "Choreography, rhythm, and body awareness. Teams create and perform original routines across multiple styles.",
+        "tag": "Performing Arts"
+      },
+      {
+        "color": "teal",
+        "icon": "🧩",
+        "title": "Critical Thinking",
+        "description": "Logic puzzles, design challenges, and team debates. Builds reasoning skills kids use in every area of life.",
+        "tag": "Thinking Skills"
+      },
+      {
+        "color": "green",
+        "icon": "🎲",
+        "title": "Structured Play & Game Design",
+        "description": "Teams invent, playtest, and refine their own board games and outdoor challenges. Play is the curriculum.",
+        "tag": "Thinking Skills"
+      }
+    ]
+  },
+  "pricing": {
+    "badge": "Programs & Pricing",
+    "title": "Choose the plan that fits your family",
+    "description": "Flexible options for every schedule — from full daily enrichment to a single monthly class.",
+    "plans": [
+      {
+        "title": "Single Class Pass",
+        "price": "$75",
+        "per": "per month · 1 class/week",
+        "description": "Try a specific skill — great for exploring what your child loves before committing to more.",
+        "features": [
+          "1 class per week (4×/month)",
+          "~4 hours of learning/month",
+          "Full team-based experience",
+          "Choose any available course",
+          "Month-to-month flexibility"
+        ],
+        "ctaLabel": "Get Started",
+        "ctaHref": "#enroll",
+        "featured": false
+      },
+      {
+        "title": "Full Month Program",
+        "price": "$650",
+        "per": "per month · weekdays afterschool",
+        "description": "The full Lumos Academy experience — 5 hours a day, 5 days a week, across all life skill courses.",
+        "features": [
+          "80 hrs/month of enrichment",
+          "Mon–Fri afterschool (5 hrs/day)",
+          "All 12+ courses included",
+          "Rotating weekly themes",
+          "Sibling discount available"
+        ],
+        "ctaLabel": "Enroll Now",
+        "ctaHref": "#enroll",
+        "featured": true,
+        "featuredBadge": "Most Popular"
+      },
+      {
+        "title": "Summer Intensive",
+        "price": "$550",
+        "per": "per week · themed full-day camp",
+        "description": "Immersive week-long camps with a new theme each week — building, performing, and creating all day.",
+        "features": [
+          "Full-day program (Mon–Fri)",
+          "New theme every week",
+          "Team projects & showcases",
+          "Multiple weeks available",
+          "Limited spots — sign up early"
+        ],
+        "ctaLabel": "Join Waitlist",
+        "ctaHref": "#enroll",
+        "featured": false
+      }
+    ],
+    "noteText": "Financial aid and sibling discounts available. ",
+    "noteLink": {
+      "label": "Contact us to learn more.",
+      "href": "#contact"
+    }
+  },
+  "howItWorks": {
+    "badge": "How It Works",
+    "title": "Getting started is simple",
+    "description": "From sign-up to first class — we make the process easy for busy Tri-Valley families.",
+    "steps": [
+      {
+        "n": "1",
+        "title": "Choose Your Plan",
+        "description": "Pick the program that fits your family's schedule — full month, single class, or summer camp."
+      },
+      {
+        "n": "2",
+        "title": "Select Your Courses",
+        "description": "Browse 12+ life skill courses and pick the ones your child is most excited about."
+      },
+      {
+        "n": "3",
+        "title": "Meet Your Team",
+        "description": "On day one, your child joins a small team of peers and an expert instructor."
+      },
+      {
+        "n": "4",
+        "title": "Watch Them Thrive",
+        "description": "See your child build real skills, lasting friendships, and confidence that comes from doing hard things together."
+      }
+    ]
+  },
+  "team": {
+    "badge": "Our Instructors",
+    "title": "Passionate educators. Real makers.",
+    "description": "Our instructors aren't just teachers — they're artists, engineers, performers, and craftspeople who bring authentic expertise to every class.",
+    "members": [
+      {
+        "photo": "🎨",
+        "name": "Instructor Bio Coming Soon",
+        "role": "Art & Drama",
+        "bio": "We're assembling an incredible team for Fall 2026 launch."
+      },
+      {
+        "photo": "🪵",
+        "name": "Instructor Bio Coming Soon",
+        "role": "Making & Craft",
+        "bio": "We're assembling an incredible team for Fall 2026 launch."
+      },
+      {
+        "photo": "💻",
+        "name": "Instructor Bio Coming Soon",
+        "role": "Technology",
+        "bio": "We're assembling an incredible team for Fall 2026 launch."
+      },
+      {
+        "photo": "🎤",
+        "name": "Instructor Bio Coming Soon",
+        "role": "Communication & Performance",
+        "bio": "We're assembling an incredible team for Fall 2026 launch."
+      }
+    ],
+    "footerText": "Interested in teaching at Lumos Academy? ",
+    "footerLink": {
+      "label": "We'd love to hear from you.",
+      "href": "#contact"
+    }
+  },
+  "faq": {
+    "badge": "FAQ",
+    "title": "Questions parents ask us most",
+    "description": "We know you have questions before entrusting us with your child. Here are the ones we hear most often.",
+    "items": [
+      {
+        "q": "What age range does Lumos Academy serve?",
+        "a": "Lumos Academy serves children ages 5–14, covering kindergarten through middle school. Our curriculum is structured by age group so the content and team dynamics are developmentally appropriate for every child."
+      },
+      {
+        "q": "What does \"team-based\" learning actually mean?",
+        "a": "Every project at Lumos Academy is completed as a team of 4–6 kids. Rather than each child working alone, they divide responsibilities, solve problems together, and share their work as a group. This mirrors how adults work in the real world — and makes learning much more engaging and memorable."
+      },
+      {
+        "q": "What is the student-to-teacher ratio?",
+        "a": "We maintain a maximum of 14 students per instructor. This ensures every child gets personal attention and that teams are small enough to be genuinely collaborative."
+      },
+      {
+        "q": "Where is Lumos Academy located?",
+        "a": "Lumos Academy serves the Tri-Valley area, with families from Dublin, Pleasanton, Livermore, and San Ramon. Our exact address will be announced before our Fall 2026 launch. Join our waitlist to be the first to know."
+      },
+      {
+        "q": "What happens if my child misses a class?",
+        "a": "We understand kids get sick and life happens. We offer one makeup session per month for Full Month Program members. Please contact us at least 24 hours in advance when possible."
+      },
+      {
+        "q": "Do you offer sibling discounts or financial aid?",
+        "a": "Yes — we offer a sibling discount for families enrolling more than one child, and we have a limited number of need-based financial aid spots for each session. Please contact us directly to discuss what's available."
+      },
+      {
+        "q": "Can I cancel or change my plan?",
+        "a": "Yes. The Single Class Pass can be paused or cancelled with 5 days' notice before your next billing cycle. The Full Month Program requires 10 days' notice before the next month begins."
+      },
+      {
+        "q": "When does the Fall 2026 program start?",
+        "a": "We are targeting September 2026, following local school district calendars. Summer intensive camps are planned for July 2026. Exact dates will be emailed to everyone on our waitlist first."
+      }
+    ]
+  },
+  "enrollCta": {
+    "title": "Fall 2026 enrollment is open.",
+    "description": "Spots are limited to 14 students per class. Reserve your child's place at Lumos Academy today.",
+    "primaryCta": {
+      "label": "Enroll for Fall 2026",
+      "href": "#enroll"
+    },
+    "secondaryCta": {
+      "label": "Join Summer Waitlist",
+      "href": "#enroll"
+    }
+  },
+  "enroll": {
+    "badge": "Get Started",
+    "title": "Reserve your child's spot",
+    "description": "Fill out the form below and we'll be in touch within 1–2 business days to confirm enrollment details.",
+    "enrollForm": {
+      "title": "🍂 Enroll for Fall 2026",
+      "subtitle": "Full Month Program or Single Class Pass · Starting September 2026",
+      "labels": {
+        "parentName": "Parent / Guardian Name *",
+        "email": "Email Address *",
+        "phone": "Phone Number",
+        "city": "City *",
+        "childAge": "Child's Age *",
+        "program": "Program Interest *",
+        "courses": "Courses your child is most excited about",
+        "notes": "Anything else we should know?"
+      },
+      "placeholders": {
+        "parentName": "Jane Smith",
+        "email": "jane@email.com",
+        "phone": "(925) 555-0100",
+        "courses": "e.g. Woodworking, Coding, Drama",
+        "notes": "Siblings enrolling, questions, special needs, etc."
+      },
+      "selects": {
+        "cityPrompt": "Select city",
+        "cities": [
+          "Dublin",
+          "Pleasanton",
+          "Livermore",
+          "San Ramon",
+          "Other nearby"
+        ],
+        "agePrompt": "Select age",
+        "programPrompt": "Select program",
+        "programs": [
+          "Full Month Program ($650/mo)",
+          "Single Class Pass ($75/mo)",
+          "Both — tell me more"
+        ]
+      },
+      "submit": "Reserve Our Spot →",
+      "success": {
+        "icon": "🎉",
+        "title": "You're on the list!",
+        "message": "We'll be in touch within 1–2 business days to confirm your enrollment details."
+      }
+    },
+    "waitlistForm": {
+      "title": "☀️ Join the Summer Waitlist",
+      "subtitle": "Summer Intensive Camps · $550/week · Starting July 2026",
+      "labels": {
+        "parentName": "Parent / Guardian Name *",
+        "email": "Email Address *",
+        "phone": "Phone Number",
+        "childAge": "Child's Age *",
+        "weeks": "Weeks Interested In",
+        "source": "How did you hear about us?",
+        "comments": "Questions or comments"
+      },
+      "placeholders": {
+        "parentName": "Jane Smith",
+        "email": "jane@email.com",
+        "phone": "(925) 555-0100",
+        "comments": "What excites your child most? Any questions about summer camp?"
+      },
+      "selects": {
+        "agePrompt": "Select age",
+        "weeksPrompt": "Not sure yet",
+        "weeksOptions": [
+          "1 week",
+          "2 weeks",
+          "3+ weeks"
+        ],
+        "sourcePrompt": "Select one",
+        "sources": [
+          "Friend / neighbor",
+          "School newsletter",
+          "Instagram / social media",
+          "Google search",
+          "NextDoor",
+          "Other"
+        ]
+      },
+      "submit": "Join the Waitlist →",
+      "success": {
+        "icon": "☀️",
+        "title": "You're on the summer waitlist!",
+        "message": "We'll send you first-priority access to summer camp registration as soon as dates are confirmed."
+      },
+      "aidNote": {
+        "prefix": "💙 ",
+        "bold": "Financial aid available.",
+        "text": " We believe every child deserves great enrichment. ",
+        "link": {
+          "label": "Contact us",
+          "href": "#contact"
+        },
+        "suffix": " to learn about our need-based assistance program."
+      }
+    }
+  },
+  "contact": {
+    "badge": "Get In Touch",
+    "title": "We'd love to hear from you",
+    "description": "Have questions before enrolling? We're happy to chat, give a tour, or answer anything on your mind.",
+    "info": {
+      "title": "Contact Lumos Academy",
+      "intro": "We serve families in Dublin, Pleasanton, Livermore, and San Ramon. Our exact location will be announced before our Fall 2026 launch — join the waitlist to be the first to know.",
+      "items": [
+        {
+          "icon": "📍",
+          "title": "Location",
+          "linesHtml": "Tri-Valley, East Bay · Dublin · Pleasanton · Livermore · San Ramon<br><em>Exact address announced soon</em>"
+        },
+        {
+          "icon": "📧",
+          "title": "Email",
+          "linesHtml": "hello@lumosacademyus.org"
+        },
+        {
+          "icon": "🕐",
+          "title": "Afterschool Hours",
+          "linesHtml": "Monday – Friday · After school hours<br>Summer camps: Full day Mon–Fri"
+        },
+        {
+          "icon": "📱",
+          "title": "Follow Us",
+          "linesHtml": "@lumosacademyus on Instagram<br><em>(launching soon — follow for updates!)</em>"
+        }
+      ]
+    },
+    "form": {
+      "title": "Send us a message",
+      "subtitle": "We reply within 1–2 business days.",
+      "labels": {
+        "name": "Your Name *",
+        "email": "Email Address *",
+        "subject": "Subject",
+        "message": "Message *"
+      },
+      "placeholders": {
+        "name": "Jane Smith",
+        "email": "jane@email.com",
+        "message": "Tell us what's on your mind..."
+      },
+      "subjects": [
+        "General question",
+        "Enrollment question",
+        "Pricing & financial aid",
+        "Partnership / instructor inquiry",
+        "Something else"
+      ],
+      "submit": "Send Message",
+      "success": {
+        "icon": "✉️",
+        "title": "Message sent!",
+        "message": "Thanks for reaching out. We'll get back to you within 1–2 business days."
+      }
+    }
+  },
+  "footer": {
+    "logoAlt": "Lumos Academy",
+    "tagline": "Hands-on life skills enrichment for kids ages 5–14. Serving Dublin, Pleasanton, Livermore, and San Ramon in the Tri-Valley, Bay Area.",
+    "instagramUrl": "https://instagram.com/lumosacademyus",
+    "columns": [
+      {
+        "title": "Programs",
+        "links": [
+          {
+            "label": "Full Month Program",
+            "href": "#programs"
+          },
+          {
+            "label": "Single Class Pass",
+            "href": "#programs"
+          },
+          {
+            "label": "Summer Intensive",
+            "href": "#programs"
+          },
+          {
+            "label": "Enroll Now",
+            "href": "#enroll"
+          }
+        ]
+      },
+      {
+        "title": "Courses",
+        "links": [
+          {
+            "label": "Art & Illustration",
+            "href": "#courses"
+          },
+          {
+            "label": "Woodworking",
+            "href": "#courses"
+          },
+          {
+            "label": "Coding",
+            "href": "#courses"
+          },
+          {
+            "label": "Public Speaking",
+            "href": "#courses"
+          },
+          {
+            "label": "Drama & Dance",
+            "href": "#courses"
+          }
+        ]
+      },
+      {
+        "title": "Info",
+        "links": [
+          {
+            "label": "About Lumos Academy",
+            "href": "#about"
+          },
+          {
+            "label": "Our Team",
+            "href": "#team"
+          },
+          {
+            "label": "FAQ",
+            "href": "#faq"
+          },
+          {
+            "label": "Contact",
+            "href": "#contact"
+          },
+          {
+            "label": "Privacy Policy",
+            "href": "privacy.html"
+          },
+          {
+            "label": "Terms of Service",
+            "href": "terms.html"
+          }
+        ]
+      }
+    ],
+    "copyright": "© 2026 Lumos Academy · lumosacademyus.org · Tri-Valley, Bay Area, CA",
+    "legalLinks": [
+      {
+        "label": "Privacy Policy",
+        "href": "privacy.html"
+      },
+      {
+        "label": "Terms of Service",
+        "href": "terms.html"
+      }
+    ]
+  },
+  "language": {
+    "switcherLabel": "Language",
+    "options": [
+      {
+        "code": "en",
+        "label": "English"
+      },
+      {
+        "code": "es",
+        "label": "Español"
+      }
+    ]
+  },
+  "errors": {
+    "formError": "Something went wrong — please email us at hello@lumosacademyus.org",
+    "submitting": "Sending…"
+  }
+}
